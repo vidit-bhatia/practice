@@ -22,7 +22,7 @@ void Stack::pop() {
 	myQueue.pop();
 	std::queue<int> swap = myQueue;
 	myQueue=tempQueue;
-	tempQueue = myQueue;
+	tempQueue = swap;
 }
 
 void Stack::push(int x) {
@@ -41,7 +41,7 @@ int Stack::top() {
 	myQueue.pop();
 	std::queue<int> swap = myQueue;
 	myQueue=tempQueue;
-	tempQueue = myQueue;
+	tempQueue = swap;
 	return myTop;
 }
 
