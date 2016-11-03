@@ -13,9 +13,9 @@
 class ViditBhatia {
 
 public:
-	ViditBhatia();
 	template<typename T>
 	std::vector<int> postorderTraversal(TreeNode<T>* root);
 };
+
 
 #endif /* VIDITBHATIA_H_ */

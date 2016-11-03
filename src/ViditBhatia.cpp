@@ -10,10 +10,6 @@
 #include <stack>
 #include "ViditBhatia.h"
 
-ViditBhatia::ViditBhatia() {
-	// TODO Auto-generated constructor stub
-
-}
 
 template<typename T>
 std::vector<int> ViditBhatia::postorderTraversal(TreeNode<T>* root) {
@@ -21,7 +17,7 @@ std::vector<int> ViditBhatia::postorderTraversal(TreeNode<T>* root) {
 	        std::stack<TreeNode<T>*> temp;
 	        std::stack<TreeNode<T>*> tempStack;
 	        temp.push(root);
-	        while(temp.empty()){
+	        while(!temp.empty()){
 	        	TreeNode<T>* currentNode=temp.top();
 	            temp.pop();
 	            if(currentNode->left == NULL && currentNode->right==NULL){

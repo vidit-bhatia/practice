@@ -1,7 +1,13 @@
+
 #include "viditbhatia.h"
 #include "viditbhatia.cpp"
 #include "TreeNode.h"
 #include "TreeNode.cpp"
+#include <algorithm>
+
+void myfunction (int i) {  // function:
+  std::cout << ' ' << i;
+}
 int main(int argc, char *argv[])
 {
 	TreeNode<int> x(1);
@@ -14,6 +20,9 @@ int main(int argc, char *argv[])
 	ViditBhatia vb;
 	std::vector<int> resultvector=vb.postorderTraversal(result);
 	std::cout << "vidit";
+	std::for_each(resultvector.begin(),resultvector.end(),myfunction);
 
 }
+
+
 
