@@ -4,11 +4,12 @@
 #include "TreeNode.h"
 #include "TreeNode.cpp"
 #include <algorithm>
+#include "Stack.h"
 
 void myfunction (int i) {  // function:
   std::cout << ' ' << i;
 }
-int main(int argc, char *argv[])
+/*int main(int argc, char *argv[])
 {
 	TreeNode<int> x(1);
 	std::vector<int> vector;
@@ -22,7 +23,13 @@ int main(int argc, char *argv[])
 	std::cout << "vidit";
 	std::for_each(resultvector.begin(),resultvector.end(),myfunction);
 
+}*/
+
+int main(int argc, char *argv[])
+{
+	Stack x;
+	x.push(1);
+	x.pop();
+	std::cout<<x.empty();
+
 }
-
-
-
