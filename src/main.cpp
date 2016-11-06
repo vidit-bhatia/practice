@@ -2,7 +2,6 @@
 #include "viditbhatia.h"
 #include "viditbhatia.cpp"
 #include "TreeNode.h"
-#include "TreeNode.cpp"
 #include <algorithm>
 #include "Stack.h"
 #include"spiral.h"
@@ -10,7 +9,21 @@
 void myfunction (int i) {  // function:
   std::cout << ' ' << i;
 }
-/*int main(int argc, char *argv[])
+
+/*
+ * for subsequence
+ *
+ * */
+int main(int argc, char *argv[]){
+	//Subsequence sequence;
+	bool result;
+	//result=sequence.isSubsequence("abd","ahbgdc");
+	std::cout << result;
+}
+
+/*
+ * for tree
+ * int main(int argc, char *argv[])
 {
 	TreeNode<int> x(1);
 	std::vector<int> vector;
@@ -26,7 +39,9 @@ void myfunction (int i) {  // function:
 
 }*/
 
-/*int main(int argc, char *argv[])
+/*
+ * for stack
+ * int main(int argc, char *argv[])
 {
 	Stack x;
 	x.push(1);
@@ -34,7 +49,9 @@ void myfunction (int i) {  // function:
 	std::cout<<x.empty();
 
 }*/
-int main(int argc, char *argv[])
+/*for spiral
+ *
+ * int main(int argc, char *argv[])
 {
 	Spiral x;
 	std::vector<std::vector<int> > matrix;
@@ -55,4 +72,4 @@ int main(int argc, char *argv[])
 		matrix.push_back(simpleMatrix2);
 	std::vector<int> result = x.spiralOrder(matrix);
 	std::for_each(result.begin(),result.end(),myfunction);
-}
+}*/
