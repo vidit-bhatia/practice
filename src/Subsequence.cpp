@@ -6,9 +6,9 @@
  */
 
 #include "Subsequence.h"
-#include<string>
-#include<unordered_map>
-#include<vector>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 bool Subsequence::isSubsequence(std::string s, std::string t) {
     std::unordered_map<int, std::vector<int> > preprocess;
@@ -18,9 +18,10 @@ bool Subsequence::isSubsequence(std::string s, std::string t) {
     for (int i = 0; i < tlength; i++) {
         std::vector<int> currentVector = preprocess[t[i]];
         int currentlength = currentVector.size();
-        for (int j = currentlength; j <= i - currentlength; j++) {
-            currentVector.push_back(j);
+        for (int j = currentlength; j <= i ; j++) {
+            currentVector.push_back(i);
         }
+        preprocess[t[i]]=currentVector;
     }
     int slength = s.length();
     if (slength == 0)

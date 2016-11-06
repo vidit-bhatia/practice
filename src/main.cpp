@@ -5,7 +5,7 @@
 #include <algorithm>
 #include "Stack.h"
 #include"spiral.h"
-
+#include "Subsequence.h"
 void myfunction (int i) {  // function:
   std::cout << ' ' << i;
 }
@@ -15,9 +15,9 @@ void myfunction (int i) {  // function:
  *
  * */
 int main(int argc, char *argv[]){
-	//Subsequence sequence;
+	Subsequence sequence;
 	bool result;
-	//result=sequence.isSubsequence("abd","ahbgdc");
+	result=sequence.isSubsequence("leeeeetcode","yyyylyyyyyyyyyeyyyyeyyyyyyeyyyyyeyyyyyyeyyyyytyyyyycyyyyyoyyyyyydyyyyyyyeyyyyyy");
 	std::cout << result;
 }
 

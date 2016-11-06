@@ -9,7 +9,7 @@
 #ifndef SUBSEQUENCE_H_
 #define SUBSEQUENCE_H_
 
-#import<string>
+#include<string>
 
 class Subsequence {
 public:
